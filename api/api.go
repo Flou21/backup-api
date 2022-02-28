@@ -17,7 +17,7 @@ func Start(errorCh chan<- error) {
 	app.Get("/api/backup/:name", listBackups)
 
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:3333",
+		AllowOrigins: "*",
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
 
