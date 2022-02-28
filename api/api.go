@@ -8,13 +8,13 @@ import (
 func Start(errorCh chan<- error) {
 	app := fiber.New()
 
-	app.Get("/target", listTargets)
-	app.Post("/target", createTarget)
-	app.Put("/target", updateTarget)
-	app.Get("/targetsWithPendingBackups", pendingBackups)
+	app.Get("/api/target", listTargets)
+	app.Post("/api/target", createTarget)
+	app.Put("/api/target", updateTarget)
+	app.Get("/api/targetsWithPendingBackups", pendingBackups)
 
-	app.Post("/backup", createBackup)
-	app.Get("/backup/:name", listBackups)
+	app.Post("/api/backup", createBackup)
+	app.Get("/api/backup/:name", listBackups)
 
 	app.Use(cors.New(cors.Config{
 		AllowOrigins: "http://localhost:3333",
