@@ -1,4 +1,4 @@
-module github.com/Coflnet/db-backup/server
+module github.com/Coflnet/db-backup/backup-api
 
 go 1.17
 

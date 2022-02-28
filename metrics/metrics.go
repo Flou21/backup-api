@@ -3,7 +3,7 @@ package metrics
 import (
 	"net/http"
 
-	"github.com/Coflnet/db-backup/server/db"
+	"github.com/Coflnet/db-backup/backup-api/db"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
@@ -11,8 +11,8 @@ import (
 
 var (
 	backupsCreated = promauto.NewCounter(prometheus.CounterOpts{
-			Name: "backup_backups_created",
-			Help: "The total number of backups created",
+		Name: "backup_backups_created",
+		Help: "The total number of backups created",
 	})
 )
 
@@ -22,5 +22,5 @@ func StartMetricsServer() {
 }
 
 func IncBackupTarget(target *db.Target) {
-	
+
 }

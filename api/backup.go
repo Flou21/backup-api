@@ -3,7 +3,7 @@ package api
 import (
 	"encoding/json"
 
-	"github.com/Coflnet/db-backup/server/db"
+	"github.com/Coflnet/db-backup/backup-api/db"
 	"github.com/gofiber/fiber/v2"
 	"github.com/rs/zerolog/log"
 )

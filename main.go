@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/Coflnet/db-backup/server/api"
-	"github.com/Coflnet/db-backup/server/db"
+	"github.com/Coflnet/db-backup/backup-api/api"
+	"github.com/Coflnet/db-backup/backup-api/db"
 	"github.com/rs/zerolog/log"
 )
 
